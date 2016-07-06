@@ -1,0 +1,1026 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>京东网上商城</title>
+  <link rel="short icon" href="faVicon.ico"	  type="image/x-icon"/><!--随便写都可以生效？-->
+  <link rel="stylesheet" href="css/basic_02.css"    type="text/css">
+  <script src="jquery-1.11.1.js" type="text/javascript"></script>
+  <style type="text/css">
+  </style>
+  <script>
+  $(function(){
+  	init();
+   });
+  function showOrHidden(id,value)
+  {
+  	document.getElementById(id).style.display=value;
+  }
+/*  function showRedBorder()
+  {
+  	document.getElementById
+  }*/
+  </script>
+ </head>
+ <body>
+	 <!--收藏和登陆-->
+	 <div id="top">
+	  <div id="top_bar">
+	    <a href="#">收藏京东</a>
+	  	<ul>
+	  		<li>
+	  			<a href="#">请登陆</a>
+	  		</li>
+	  		<li>
+	  			<a href="#">免费注册</a>
+	  		</li><b ></b>
+	  		<li>
+	  			
+	  			<a href="#">我的订单</a>	
+	  		</li><b></b>
+	  		<li>
+	  			
+	  			<a id="vipicon" href="#">会员俱乐部</a>	
+	  		</li><b></b>
+	  		<li>
+	  			
+	  			<a id="dakehu" href="#">企业频道</a>	  			
+	  		</li><b></b>
+	  		<li id="jd_app">
+	  			
+	  			<span><a href="#">手机京东</a></span><!--注意，这里span必须和a同一行写，否则span的bodder-right会无法显示-->	
+	  			<div id="jd_app_down" class="top_bar_todown" >
+	  				<div>京东客户端
+	  					<div></div>
+	  					<div></div>
+	  				</div>
+	  				<div>网银客户端
+	  					<div></div>
+	  					<div></div>
+	  				</div>
+	  			</div>
+	  		</li><b></b>
+	  		<li id="custmer_service" >
+	  			
+	  			<a class="to-down" href="#"  >客户服务</a>	
+	  			<div id="service_down" class="top_bar_todown">
+	  				<ul>
+	  					<li><a href="#">帮助服务</a></li>
+	  					<li><a href="#">售后服务</a></li>
+	  					<li><a href="#">在线客服</a></li>
+	  					<li><a href="#">投诉中西</a></li>
+	  					<li><a href="#">客服邮箱</a> </li>
+	  				</ul>
+	  			</div>
+	  		</li><b></b>
+	  		<li id="site_map" onmouseover="showOrHidden('site_down','block')"
+	  		onmouseout="showOrHidden('site_down','none')">
+	  			
+	  			<a class="to-down" href="#">网站导航</a>
+	  			<div id="site_down" class="top_bar_todown" >
+	  				<h3 style="border-bottom:1px solid #ddd;" >特色栏目</h3>
+	  					<ul style="float:left">
+	  					<li><a href="javascript:void(0)">京东通信</a></li>
+	  					<li><a href="javascript:void(0)">校园之星</a></li>
+	  					<li><a href="javascript:void(0)">视频社区</a></li>
+	  					<li><a href="javascript:void(0)">京东社区</a></li>
+	  					<li><a href="javascript:void(0)">在线装机</a></li>
+	  					<li><a href="javascript:void(0)">假装成</a></li>
+	  					<li><a href="javascript:void(0)">我喜欢</a></li>
+	  					<li><a href="javascript:void(0)">游戏社区</a></li>
+	  					</ul>
+	  				<h3 style="border-bottom:1px solid #ddd">企业服务</h3>
+	  					<ul style="float:left">
+	  					<li><a href="javascript:void(0)">企业采购</a></li>
+	  					<li><a href="javascript:void(0)">办公直通车</a></li>
+	  					<li><a href="javascript:void(0)">呵呵呵</a></li>
+	  					<li><a href="javascript:void(0)">哈哈哈</a></li>
+	  					</ul>
+	  				<h3 >旗下网站</h3>
+	  					<ul style="float:left">
+	  					<li><a href="javascript:void(0)">English网站</a></li>
+	  					<li><a href="javascript:void(0)">外部链接</a></li>		
+	  					</ul>
+	  			</div>	
+	  		</li>
+	  	</ul>
+	  </div>								
+	 </div>
+	  <!--logo和搜索-->
+	 <div id="top_main">
+	 	<a href="http://www.jd.com" hidefocus="true" class="lt">
+	 		<img src="images/logo-201305.png"/>
+	 	</a>
+	 	<div id="search_box" class="lt">
+	 	<div>
+	 		<input type="text" onfocus="showOrHidden('search_todown','block')"   onblur="
+	 		showOrHidden('search_todown','none')" />
+	 		<input type="button" value="搜索" />
+	 	</div>
+	 	<div>
+	 		<ul>	
+	 			<li><a href="#">热门搜索：</a></li>
+	 			<li><a href="#">家纺11大战</a></li>
+	 			<li><a href="#">彩虹电热毯</a></li>
+	 			<li><a href="#">博洋家纺</a></li>
+	 			<li><a href="#">下针</a></li>
+	 			<li><a href="#">床褥床垫</a></li>
+	 			<li><a href="#">九州鹿辈子</a></li>
+	 			<li><a href="#">南极人家纺</a></li>
+	 		</ul>
+	 	</div>
+	 	<div id="search_todown">
+	 		<p class="clr"><a class="lt" href="">卫衣</a><span class="rt">109个相关商品</span></p>		
+	 		<p class="clr"><a class="lt" href="">卫生裤</a><span class="rt">109个相关商品</span></p>	
+	 		<p class="clr"><a class="lt" href="">卫衣</a><span class="rt">109个相关商品</span></p>	
+	 		<p class="clr"><a class="lt" href="">卫裤</a><span class="rt">109个相关商品</span></p>	
+	 		<p class="clr"><a class="lt" href="">卫生间</a><span class="rt">109个相关商品</span></p>	
+	 		<p class="clr"><a class="lt" href="">卫生室</a><span class="rt">109个相关商品</span></p>	
+	 		<p class="clr"><a class="lt" href="">卫生巾</a><span class="rt">109个相关商品</span></p>	
+	 		<p class="clr"><a class="lt" href="">卫生纸</a><span class="rt">109个相关商品</span></p>	
+	 	</div>
+	 	</div>
+	 	<div id="my_jd" class="lt">
+	 		<a href="javascript:void(0)">我的京东</a>
+	 		<b></b>
+	 	</div>
+	 	<div id="my_gwc" class="lt">
+	 		<a href="javascript:void(0)">去购物车结算</a>
+	 		<b></b>
+	 	</div>
+
+	 </div> 	 <!--商品分类栏-->
+	 <div id="nav">
+	 	<b onclick="">全部商品分类</b>
+	 	<b>首页</b>
+	 	<b>服装城</b>
+	 	<b>食品</b>
+	 	<b>团购</b>
+	 	<b>夺宝岛</b>
+	 	<b>闪购</b>
+	 	<b>金融</b>
+	 </div> 
+	 <!--商品详情Main-->
+	 <div id="main">
+	 	<div id="main_top">
+	 	<b><a href="javascript:void(0)"><a>个护化妆</a></b>&nbsp;&gt;&nbsp;
+	 	<a href="javascript:void(0)">清洁用具</a>&nbsp;&gt;&nbsp;
+	 	<a href="javascript:void(0)">衣物清洁</a>&nbsp;&gt;&nbsp;
+	 	<a href="javascript:void(0)">卫新</a>&nbsp;&gt;&nbsp;
+	 	<a href="javascript:void(0)">卫新洗衣液</a>
+	 	</div>
+	 	<div id="main_detail">
+	 		<div id="main_detail_one" class="lt">
+	 			<img src="images/products/product-s1-m.jpg" alt="洗衣液" width="350px" height="350px" />
+	 			<p id="makeBig"></p>
+	 			<p id="makeBigTop" onmouseover="makeBigDisplay()" onmouseout="makeBigNoDisplay()"></p>
+	 			<p id="screen"><img src="images/products/product-s1-l.jpg" alt="" /></p>
+ 				<span class="back_Disabled" onclick="moveleft()"></span>
+ 				<div>
+	 			<ul>
+	 				<li class="selectedLi"><img src="images/products/product-s1.jpg" alt="" width="50px" height="50px" /></li>
+	 				<li><img src="images/products/product-s2.jpg" alt="" width="50px" height="50px" /></li>
+	 				<li><img src="images/products/product-s3.jpg" alt="" width="50px" height="50px" /></li>
+	 				<li><img src="images/products/product-s4.jpg" alt="" width="50px" height="50px" /></li>
+	 				<li><img src="images/products/product-s1.jpg" alt="" width="50px" height="50px" /></li>
+	 				<li><img src="images/products/product-s2.jpg" alt="" width="50px" height="50px" /></li>
+	 				<li><img src="images/products/product-s3.jpg" alt="" width="50px" height="50px" /></li>
+	 				<li><img src="images/products/product-s4.jpg" alt="" width="50px" height="50px" /></li>
+	 			</ul>
+	 			</div>
+	 			<span class="forword" onclick="moveright()"></span>
+	 		</div>
+	 		<div id="main_detail_two" class="lt">
+	 			<b>卫新 薰衣草洗衣液 4.26kg</b>
+	 			<span>与威露士一起巩固健康生活</span>
+	 			<div id="price">
+	 				<span class="fontcolor">京   东 价：</span><b>￥59.90</b><a href="javascript:void(0)">（降价通知）</a>
+	 				<div id="pj"><p class="fontcolor">累计评价</p><a href="javascript:void(0)">59046</a></div>
+	 			</div>
+	 			<div id="cxxx">
+	 				<div class="lt"><span class="fontcolor lineHeight">促销信息:</span></div>
+	 				<div class="lt lineHeight">
+	 					<div><em>满减</em><span class="redfont">满300.0减100.0，满800.0减300.0</span><a href="javascript:void(0)"> 详情>></a></div>
+	 					<div><em>满额返劵</em><span class="redfont">购买威露士及旗下品牌满88元返88元优惠券，免费得大礼包</span><a href="javascript:void(0)"> 详情>></a></div>
+	 				</div>
+	 			</div>
+	 			
+	 			<div id="address">
+	 				<span class="fontcolor">配 送 至：</span>
+	 				<span id="addressCheck" class="fontcolor" onmouseover="hiddenAddShow()">北京朝阳<b></b></span>
+	 				<span id="haveSt"><b>有货,</b>支持&nbsp;<a href="javascript:void(0)">免运费</a>&nbsp;|&nbsp;<a href="javascript:void(0)">货到付款</a></span>
+	 				<div id="hiddenAddress">
+	 				    <span onclick="$('#hiddenAddress').css('display','none')"></span>
+	 					<div>常用地址<b></b></div>
+	 					<div>选择新地址<b></b></div>
+	 					<div>
+	 						<div><ul></ul></div>
+	 						<div><ul></ul></div>
+	 						<div><ul></ul></div>
+	 						<div><ul></ul></div>
+	 					</div>
+	 				</div>
+	 			</div>
+	 			<div id="sever" class="fontcolor">服　　务：由 京东 发货，并提供售后服务。11:10前完成下单,预计<b>今天(06月26日)</b>送达</div>
+	 			<div id="xuanchanpin" class="fontcolor "> 
+	 				<span class="lt">选择产品：</span>
+	 				<div class="lt" onclick="select(this)">薰衣草<b class="selected"></b></div>
+	 				<div class="lt" onclick="select(this)">索菲利亚玫瑰<b></b></div>
+	 			</div>
+	 			<div class="fontcolor" id="zengzhi">
+	 				<div>增值保障：</div>	
+	 				<div>京东换新 ￥4.9<b></b></div>
+	 				<div></div>
+	 			</div>
+	 			<div id="baitiao" class="fontcolor">
+	 				<span class="lt">白条分期：</span>
+	 				<ul class="lt">
+	 					<li>30天免息</li>
+	 					<li>￥16.8×3期</li>
+	 					<li>￥8.57×6期</li>
+	 					<li>￥4.41×12期</li>
+	 					<li>￥2.33×24期</li>
+	 				</ul>
+	 				<b></b>
+	 			</div>
+	 			<div id="shuliang">
+	 				<div>
+	 					<input type="text" value="1" class="lt" />
+	 					<div class="lt">
+	 						<span>+</span>
+	 						<span>-</span>
+	 					</div>
+	 				</div>
+	 				<div></div>
+	 				<div></div>
+	 			</div>
+	 			<div id="tishi" class="fontcolor">
+	 				<div class="lt">温馨提示：</div>
+	 				<ol>
+	 					<li>1. 本商品不能使用 东券 京券</li>
+	 					<li>&nbsp;2. 支持7天无理由退货</li>
+	 				</ol>
+	 			</div>
+	 			<div class="clr"></div>
+	 		</div>
+	 		<div id="main_detail_three" class="lt">
+	 			<div id="JDziying">
+	 				<div>京东自营</div>
+	 				<div>留言咨询</div>
+	 				<div class="fontcolor">服务支持：</div>
+	 				<ul id="severzhichi"><li></li><li></li><li></li></ul>
+	 			</div>
+	 		</div>
+	 		<div class="clr"></div>	
+	 	</div>
+	 	<div class="clr"></div>
+	 </div> 
+	 <hr id="hr1"/>
+	 <!--产品详情-->
+	 <div id="detail">
+	 	<div id="tuijian">
+	 		<div id="tuijianTop">
+	 			<div class="tuijian_top">推荐配件</div>
+	 			<div >优惠套装</div>
+	 			<div>人气单品</div>
+	 		</div>
+	 		<div id="tuijianbottom">
+		 		<div>
+		 			<ul>
+		 				<li class="redfont">精选配件</li><i></i>
+		 				<li>驱虫用品</li><i></i>
+		 				<li>纸品湿巾</li><i></i>
+		 				<li>衣物清洁</li><i></i>
+		 				<li>家庭清洁</li>
+		 			</ul>
+		 			<div id="jingxuan">
+		 				<ol>
+		 					<li><img src="images/products/product_01_m.jpg"><i></i><a href="javascript:void(0)">京东超市，威信洗衣液 4.26KG</a>
+		 					<div><input type="checkbox" name=""><b class="redfont">￥24.90</b></div></li>
+		 					<li><img src="images/products/product_01_m.jpg"><i></i><a href="javascript:void(0)">鹰王 蚊香液 两瓶液+30片+片液两用器 45ml×2+30</a>
+		 					<div><input type="checkbox" name=""><b class="redfont">￥30.90</b></div></li>
+		 					<li><img src="images/products/product_01_m.jpg"><i></i><a href="javascript:void(0)">飘漾（Pure Young）婴儿柔湿巾80片 手口专用型80</a>
+		 					<div><input type="checkbox" name=""><b class="redfont">￥59</b></div></li>
+		 					<li><img src="images/products/product_01_m.jpg"><i></i><a href="javascript:void(0)">绿岛（Green island）绿岛全自动深层洁净洗衣液</a>
+		 					<div><input type="checkbox" name=""><b class="redfont">￥87</b></div></li>
+		 					<li><img src="images/products/product_01_m.jpg"><a href="javascript:void(0)">绿岛（Green island）固体清香剂- 薰衣草香型88g </a>
+		 					<div><input type="checkbox" name=""><b class="redfont">￥290</b></div></li>
+		 				</ol>
+		 				<div id="rtdiv">	
+		 					<div class="rt">
+		 						<div>已选择0个配件</div>
+		 						<div>搭 配 价：￥57.00</div>
+		 						<div></div>
+		 					</div>
+		 					<b class="rt"></b>
+		 				</div>
+		 			</div>
+		 			<div id="quchong">
+		 				<ol>
+		 					<li><img src="images/products/product_01_m.jpg"><i></i><a href="javascript:void(0)">京东超市，威信洗衣液 4.26KG</a>
+		 					<div><input type="checkbox" name=""><b class="redfont">￥24.90</b></div></li>
+		 					<li><img src="images/products/product_01_m.jpg"><i></i><a href="javascript:void(0)">鹰王 蚊香液 两瓶液+30片+片液两用器 45ml×2+30</a>
+		 					<div><input type="checkbox" name=""><b class="redfont">￥30.90</b></div></li>
+		 					<li><img src="images/products/product_01_m.jpg"><i></i><a href="javascript:void(0)">飘漾（Pure Young）婴儿柔湿巾80片 手口专用型80</a>
+		 					<div><input type="checkbox" name=""><b class="redfont">￥59</b></div></li>
+		 					<li><img src="images/products/product_01_m.jpg"><a href="javascript:void(0)">绿岛（Green island）固体清香剂- 薰衣草香型88g </a>
+		 					<div><input type="checkbox" name=""><b class="redfont">￥290</b></div></li>
+		 				</ol>
+		 				<div id="rtdiv">	
+		 					<div class="rt">
+		 						<div>已选择0个配件</div>
+		 						<div>搭 配 价：￥57.00</div>
+		 						<div></div>
+		 					</div>
+		 					<b class="rt"></b>
+		 				</div>
+		 			</div>
+		 			<div id="zhipin">
+		 				<ol>
+		 					<li><img src="images/products/product_01_m.jpg"><i></i><a href="javascript:void(0)">京东超市，威信洗衣液 4.26KG</a>
+		 					<div><input type="checkbox" name=""><b class="redfont">￥24.90</b></div></li>
+		 					<li><img src="images/products/product_01_m.jpg"><i></i><a href="javascript:void(0)">鹰王 蚊香液 两瓶液+30片+片液两用器 45ml×2+30</a>
+		 					<div><input type="checkbox" name=""><b class="redfont">￥30.90</b></div></li>
+		 					<li><img src="images/products/product_01_m.jpg"><a href="javascript:void(0)">绿岛（Green island）固体清香剂- 薰衣草香型88g </a>
+		 					<div><input type="checkbox" name=""><b class="redfont">￥290</b></div></li>
+		 				</ol>
+		 				<div id="rtdiv">	
+		 					<div class="rt">
+		 						<div>已选择0个配件</div>
+		 						<div>搭 配 价：￥57.00</div>
+		 						<div></div>
+		 					</div>
+		 					<b class="rt"></b>
+		 				</div>
+		 			</div>	
+		 			<div id="yiwu">
+		 				<ol>
+		 					<li><img src="images/products/product_01_m.jpg"><i></i><a href="javascript:void(0)">京东超市，威信洗衣液 4.26KG</a>
+		 					<div><input type="checkbox" name=""><b class="redfont">￥24.90</b></div></li>
+		 					<li><img src="images/products/product_01_m.jpg"><a href="javascript:void(0)">绿岛（Green island）固体清香剂- 薰衣草香型88g </a>
+		 					<div><input type="checkbox" name=""><b class="redfont">￥290</b></div></li>
+		 				</ol>
+		 				<div id="rtdiv">	
+		 					<div class="rt">
+		 						<div>已选择0个配件</div>
+		 						<div>搭 配 价：￥57.00</div>
+		 						<div></div>
+		 					</div>
+		 					<b class="rt"></b>
+		 				</div>
+		 			</div>
+		 			<div id="jiating">
+		 				<ol>
+		 					<li><img src="images/products/product_01_m.jpg"><a href="javascript:void(0)">绿岛（Green island）固体清香剂- 薰衣草香型88g </a>
+		 					<div><input type="checkbox" name=""><b class="redfont">￥290</b></div></li>
+		 				</ol>
+		 				<div id="rtdiv">	
+		 					<div class="rt">
+		 						<div>已选择0个配件</div>
+		 						<div>搭 配 价：￥57.00</div>
+		 						<div></div>
+		 					</div>
+		 					<b class="rt"></b>
+		 				</div>
+		 			</div>		
+		 		</div>
+	 		</div>
+	 		<div id="tuijianbottom-2">
+	 			<div>
+	 				<ol>
+	 					<li><a class="redfont lt" href="">优惠套装1</a></li>
+	 				</ol>
+	 			</div>
+	 			<div class="clr"></div>
+	 			<div>
+	 				<ul>
+	 					<li><div><img src="images/products/8e5f1e.jpg"><b></b></div><div>
+	 					<a href="javascript:void(0)">【京东超市】卫新 &nbsp;&nbsp;&nbsp; 薰衣草洗衣液4.26</a></div></li>
+	 					<li><div><img src="images/products/7656be2.jpg"></div><div>
+	 					<a href="javascript:void(0)">乐扣乐扣(lock&lock)缤纷马克保温杯两件套(330ml)</a></div></li>
+	 				</ul>
+	 				<div class="rt">
+	 					<b></b>
+	 					<div>卫新乐扣套装</div>
+	 					<div>套 装 价：<b class="redfont">￥157.00</b></div>
+	 					<div>京 东 价：<del>￥ 162.00</del></div>
+	 					<div>立即节省：<span>￥5.00</span></div>
+	 					<div>购买套餐</div>
+	 				</div>
+	 			</div>
+	 		</div>
+	 		<div id="tuijianbottom-3">
+	 			<ul>
+	 				<li><a href="javascript:void(0)"><img src="images/products/N4f5c87ea.jpg"></a><div>
+	 				<a href="javascript:void(0)">【京东超市】卫新 薰衣草洗衣液 袋装（补充</a></div><b>￥29.90</b></li>
+	 				<li><a href="javascript:void(0)"><img src="images/products/b62c9.jpg"></a><div>
+	 				<a href="javascript:void(0)">【京东超市】卫新 香薰洗衣液 索菲亚玫瑰 4.5kg</a></div><b>￥22.90</b></li>
+	 				<li><a href="javascript:void(0)"><img src="images/products/N4f5c87ea.jpg"></a><div>
+	 				<a href="javascript:void(0)">【京东超市】卫新 香薰洗衣液 索菲亚玫瑰 3kg</a></div><b>￥78.90</b></li>
+	 				<li><a href="javascript:void(0)"><img src="images/products/b62c9.jpg"></a><div>
+	 				<a href="javascript:void(0)">【京东超市】威露士（Walch） 衣物除菌液 </a></div><b>￥76.90</b></li>
+	 				<li><a href="javascript:void(0)"><img src="images/products/N4f5c87ea.jpg"></a><div>
+	 				<a href="javascript:void(0)">【京东超市】妈妈壹选天然皂液（倍柔洗衣液)</a></div><b>￥98</b></li>
+	 				<li><a href="javascript:void(0)"><img src="images/products/b62c9.jpg"></a><div>
+	 				<a href="javascript:void(0)">【京东超市】卫新 洗衣液 薰衣草 两连袋（补充</a></div><b>￥52</b></li>
+	 			</ul>
+	 		</div>
+	 	</div>
+	 	<div id="chanpin">
+	 		<div id="chanpin-left" class="lt">
+	 			<div class="fontborder"><span>联系供应商</span></div>
+	 			<div>
+	 				<div class="fontborder">相关分类</div>
+	 				<div class="fontborder">
+	 				<ul>
+	 					<li><a href="javascript:void(0)">纸品湿巾</a></li>
+	 					<li><a href="javascript:void(0)">衣物清洁</a></li>
+	 					<li><a href="javascript:void(0)">清洁工具</a></li>
+	 					<li><a href="javascript:void(0)">驱虫用品</a></li>
+	 					<li><a href="javascript:void(0)">家庭清洁</a></li>
+	 					<li><a href="javascript:void(0)">皮具护理</a></li>
+	 					<li><a href="javascript:void(0)">一次性用品</a></li>
+	 				</ul>
+	 				</div>
+	 			</div>
+	 			<div>
+	 				<div class="fontborder">同类其他品牌</div>
+	 				<div class="fontborder">
+	 				<ul>
+	 					<li><a href="javascript:void(0)">蓝月亮</a></li>
+	 					<li><a href="javascript:void(0)">汰渍</a></li>
+	 					<li><a href="javascript:void(0)">奥妙</a></li>
+	 					<li><a href="javascript:void(0)">卫新</a></li>
+	 					<li><a href="javascript:void(0)">金纺</a></li>
+	 					<li><a href="javascript:void(0)">立白</a></li>
+	 					<li><a href="javascript:void(0)">威露士</a></li>
+	 					<li><a href="javascript:void(0)">超能</a></li>
+	 					<li><a href="javascript:void(0)">碧浪</a></li>
+	 					<li><a href="javascript:void(0)">妈妈壹选</a></li>
+	 					<li><a href="javascript:void(0)">雕牌</a></li>
+	 					<li><a href="javascript:void(0)">滴露</a></li>
+	 					<li><a href="javascript:void(0)">白猫</a></li>
+	 					<li><a href="javascript:void(0)">绿伞</a></li>
+	 					<li><a href="javascript:void(0)">洛娃</a></li>
+	 					<li><a href="javascript:void(0)">奇强</a></li>
+	 					<li><a href="javascript:void(0)">亮净</a></li>
+	 					<li><a href="javascript:void(0)">可柔可顺</a></li>
+	 					<li><a href="javascript:void(0)">保宁</a></li>
+	 					<li><a href="javascript:void(0)">贝克曼博士</a></li>
+	 				</ul>
+	 				</div>
+	 			</div>
+	 			<div id="daren">
+	 				<div class="fontborder">达人选购</div>
+	 				<div class="fontborder">
+	 				<ul>
+	 					<li><a href="javascript:void(0)"><img src="images/products/p001.jpg"></a><div><a href="javascript:void(0)">【京东超市】卫新香薰洗衣液4.26kg（索菲亚玫瑰）</a></div><b class="redfont">￥28</b></li>
+	 					<li><a href="javascript:void(0)"><img src="images/products/p002.jpg"></a><div><a href="javascript:void(0)">蓝月亮 深层洁净护理洗衣液（薰衣草）1kg*2瓶 （新老包装随机发货）</a></div><b class="redfont">￥18</b></li>
+	 					<li><a href="javascript:void(0)"><img src="images/products/p003.jpg"></a><div><a href="javascript:void(0)">【京东超市】卫新香薰洗衣液 索菲亚玫瑰 4.5kg</a></div><b class="redfont">￥34.2</b></li>
+	 					<li><a href="javascript:void(0)"><img src="images/products/p004.jpg"></a><div><a href="javascript:void(0)">【京东超市】卫新薰衣草洗衣液3kg</a></div><b class="redfont">￥21.9</b></li>
+	 					<li><a href="javascript:void(0)"><img src="images/products/p005.jpg"></a><div><a href="javascript:void(0)">【京东超市】卫新洗衣液薰衣草两连袋（补充装）3.26kg</a></div><b class="redfont">￥34</b></li>
+	 					<li><a href="javascript:void(0)"><img src="images/products/product_01_m.jpg"></a><div><a href="javascript:void(0)">卫新柔顺剂3kg去静电衣物护理液送500gx3袋装 walch/威露士出品 衣物去静电护理</a></div><b class="redfont">￥28</b></li>
+	 				</ul>
+	 				</div>
+	 			</div>
+	 			<div id="yiwuqj">
+	 				<div class="fontborder">衣物清洁排行榜</div>
+	 				<div class="fontborder">
+	 					<span class="redbold">同价位</span>
+	 					<span>同品牌</span>
+	 					<span>同类别</span>
+	 				</div>
+	 				<div>
+		 				<div class="fontborder">
+		 					<ul>
+		 						<li><b>1</b><a href="javascript:void(0)"><img src="images/products/product-s1.jpg"></a><div><div>威信洗衣液</div><b>￥98.00</b></div></li>
+		 						<li><b>2</b><a href="javascript:void(0)"><img src="images/products/product-s2.jpg"></a><div><div>威信洗衣液</div><b>￥98.00</b></div></li>
+		 						<li><b>3</b><a href="javascript:void(0)"><img src="images/products/product-s3.jpg"></a><div><div>威信洗衣液</div><b>￥98.00</b></div></li>
+		 						<li><b>4</b><a href="javascript:void(0)"><img src="images/products/product-s4.jpg"></a><div><div>威信洗衣液</div><b>￥98.00</b></div></li>
+		 						<li><b>5</b><a href="javascript:void(0)"><img src="images/products/product-s5.jpg"></a><div><div>威信洗衣液</div><b>￥98.00</b></div></li>
+		 						<li><b>6</b><a href="javascript:void(0)"><img src="images/products/product-s6.jpg"></a><div><div>威信洗衣液</div><b>￥98.00</b></div></li>
+		 						<li><b>7</b><a href="javascript:void(0)"><img src="images/products/product-s7.jpg"></a><div><div>威信洗衣液</div><b>￥98.00</b></div></li>
+		 					</ul>
+		 				</div>
+		 				<div class="fontborder displaynone">
+		 					<ul>
+		 						<li><b>1</b><a href="javascript:void(0)"><img src="images/products/product-s1.jpg"></a><div><div>妈妈洗衣液</div><b>￥28.00</b></div></li>
+		 						<li><b>2</b><a href="javascript:void(0)"><img src="images/products/product-s2.jpg"></a><div><div>妈妈洗衣液</div><b>￥98.00</b></div></li>
+		 						<li><b>3</b><a href="javascript:void(0)"><img src="images/products/product-s3.jpg"></a><div><div>妈妈洗衣液</div><b>￥48.00</b></div></li>
+		 						<li><b>4</b><a href="javascript:void(0)"><img src="images/products/product-s4.jpg"></a><div><div>妈妈洗衣液</div><b>￥98.00</b></div></li>
+		 						<li><b>5</b><a href="javascript:void(0)"><img src="images/products/product-s5.jpg"></a><div><div>妈妈洗衣液</div><b>￥94.00</b></div></li>
+		 						<li><b>6</b><a href="javascript:void(0)"><img src="images/products/product-s6.jpg"></a><div><div>妈妈洗衣液</div><b>￥92.00</b></div></li>
+		 						<li><b>7</b><a href="javascript:void(0)"><img src="images/products/product-s7.jpg"></a><div><div>妈妈洗衣液</div><b>￥98.30</b></div></li>
+		 					</ul>
+		 				</div>
+		 				<div class="fontborder  displaynone">
+		 					<ul>
+		 						<li><b>1</b><a href="javascript:void(0)"><img src="images/products/product-s1.jpg"></a><div><div>立白洗衣液</div><b>￥198.00</b></div></li>
+		 						<li><b>2</b><a href="javascript:void(0)"><img src="images/products/product-s2.jpg"></a><div><div>立白洗衣液</div><b>￥298.00</b></div></li>
+		 						<li><b>3</b><a href="javascript:void(0)"><img src="images/products/product-s3.jpg"></a><div><div>立白洗衣液</div><b>￥398.00</b></div></li>
+		 						<li><b>4</b><a href="javascript:void(0)"><img src="images/products/product-s4.jpg"></a><div><div>立白洗衣液</div><b>￥498.00</b></div></li>
+		 						<li><b>5</b><a href="javascript:void(0)"><img src="images/products/product-s5.jpg"></a><div><div>立白洗衣液</div><b>￥598.00</b></div></li>
+		 						<li><b>6</b><a href="javascript:void(0)"><img src="images/products/product-s6.jpg"></a><div><div>立白洗衣液</div><b>￥698.00</b></div></li>
+		 						<li><b>7</b><a href="javascript:void(0)"><img src="images/products/product-s7.jpg"></a><div><div>立白洗衣液</div><b>￥798.00</b></div></li>
+		 					</ul>
+		 				</div>
+	 				</div>
+	 			</div>
+	 			<div id="kanyoukan">
+	 				<div class="fontborder">看了又看</div>
+	 				<div class="fontborder">
+	 					<ul>
+	 						<li><a href="javascript:void(0)"><img src="images/products/product_01_m.jpg"></a><div><a href="javascript:void(0)">【京东超市】卫新 薰衣草洗衣液 袋装（补充装）2kg</a></div><b>￥26.00</b></li>
+	 						<li><a href="javascript:void(0)"><img src="images/products/product_02_m.jpg"></a><div><a href="javascript:void(0)">【京东超市】卫新 薰衣草洗衣液 袋装（补充装）2kg</a></div><b>￥26.00</b></li>
+	 						<li><a href="javascript:void(0)"><img src="images/products/product_03_m.jpg"></a><div><a href="javascript:void(0)">【京东超市】卫新 香薰洗衣液 索菲亚玫瑰 3kg</a></div><b>￥26.30</b></li>
+	 						<li><a href="javascript:void(0)"><img src="images/products/product_04_m.jpg"></a><div><a href="javascript:void(0)">【京东超市】卫新 香薰洗衣液 索菲亚玫瑰 3kg</a></div><b>￥16.40</b></li>
+	 						<li><a href="javascript:void(0)"><img src="images/products/product_05_m.jpg"></a><div><a href="javascript:void(0)">【京东超市】卫新 升级 软黄金纺织品 柔顺剂 清怡樱花衣物护理剂 金装 3kg（新老包装，随机发放）</a></div><b>￥16.40</b></li>
+	 						<li><a href="javascript:void(0)"><img src="images/products/product_01_m.jpg"></a><div><a href="javascript:void(0)">【京东超市】卫新 升级 软黄金纺织品 柔顺剂 清怡樱花衣物护理剂 金装 3kg（新老包装，随机发放）</a></div><b>￥16.40</b></li>
+	 						<li><a href="javascript:void(0)"><img src="images/products/product_04_m.jpg"></a><div><a href="javascript:void(0)">【京东超市】威露士（Walch） 衣物除菌液 2.5L送1.5L 加量装 家用衣物消毒液</a></div><b>￥34.40</b></li>
+	 						<li><a href="javascript:void(0)"><img src="images/products/product_03_m.jpg"></a><div><a href="javascript:void(0)">【京东超市】威露士（Walch） 衣物除菌液 2.5L送1.5L 加量装 家用衣物消毒液</a></div><b>￥16.40</b></li>
+	 						<li><a href="javascript:void(0)"><img src="images/products/product_02_m.jpg"></a><div><a href="javascript:void(0)">【京东超市】卫新 香薰洗衣液4.26kg （索菲亚玫瑰）</a></div><b>￥16.50</b></li>
+	 						<li><a href="javascript:void(0)"><img src="images/products/product_05_m.jpg"></a><div><a href="javascript:void(0)">【京东超市】卫新 香薰洗衣液4.26kg （索菲亚玫瑰）</a></div><b>￥16.40</b></li>
+	 					</ul>
+	 				</div>
+	 			</div>
+	 		</div>
+	 		<div id="chanpin-right" class="lt">
+	 			<div id="chanpin-r-top" class="fontborder">
+	 				<ul>
+	 					<li class="chanpin-r-t-s"><a href="javascript:void(0)">商品介绍</a></li>
+	 					<li><a href="javascript:void(0)">规格参数</a></li>
+	 					<li><a href="javascript:void(0)">包装清单</a></li>
+	 					<li><a href="javascript:void(0)">商品评价（1247）</a></li>
+	 					<li><a href="javascript:void(0)">售后保障</a></li>
+	 				</ul>
+	 				<div class="rt">
+	 					<a href="javascript:void(0)"></a>
+	 					<div id="gouwuche">
+	 						<img src="images/products/product_01_m.jpg" class="lt">
+	 						<div class="lt">
+	 							<div></div>
+	 							<div>【京东超市】卫新 薰衣草洗衣液 4.26kg</div>
+	 							<div><span>京东价：</span><strong class="redfont">￥57.00</strong></div>
+	 						</div>	
+	 					</div>
+	 				</div>
+	 				<div class="rt">
+	 					<a href="javascript:void(0)">新人188礼包移动专享</a>
+	 					<b></b><i></i>
+	 					<div>
+	 					</div>
+	 				</div>
+	 			</div>
+	 			<div id="chanpin-r-bottom1">
+	 				<div id="chanpin-r-bottom11">
+	 					<ul>
+	 						<li>商品名称：卫新洗衣液</li>
+	 						<li>商品编号：1039778</li>
+	 						<li>品牌： 卫新</li>
+	 						<li>上架时间：2014-01-23 16:28:06</li>
+	 						<li>商品毛重：4.55kg</li>
+	 						<li>商品产地：广东省从化市</li>
+	 						<li>类别：手洗洗衣液，机洗洗衣液</li>
+	 						<li>规格：3kg以上</li>
+	 						<li>香型：香味</li>	
+	 					</ul>
+	 					<a href="javascript:void(0)">更多参数>></a>
+	 				</div>
+	 				<div id="chanpin-r-bottom12"><img src="images/qingrenjie.jpg"></div>
+	 				<div id="chanpin-r-bottom13">
+	 					<div class="lt fontborder">
+	 						<div><b></b><span>如果您发现商品信息不准确,</span><a href="javascript:void(0)">欢迎纠错</a></div>
+	 						<img id="qijiandianimg" src="images/qijiandian.jpg">
+	 						<div class="duokuai"><b>产品信息</b><span>Product Information</span></div>
+	 						<div id="chanpinxinxidown">
+	 							<img class="lt" src="images/products/product_01.jpg">
+	 							<p class="lt">
+										<b>卫新 薰衣草洗衣液 （新老包装 随机发货）</b><br><br>
+										净含量：4.26kg<br>
+										产品功效：<br>
+										1.特别添加法国薰衣草精油成分，令衣物充满芬<br>
+										芳舒缓的怡人气息。<br>
+										2.纳米智能分解技术，深层渗透衣物纤<br>
+										维，自动逐一瓦解各种顽固污渍及细菌，不损衣物纤维，净<br>
+										白亮色。3.特有去渍防护配方，减少污渍吸附在衣物表面，<br>
+										穿着时持久洁净更耐脏。4.中性配方，成分更温和，温柔呵<br>
+										护家人皮肤。5.全新低泡技术，用量少，易漂无残留。<br>
+										6.含柔顺成分，令衣物恢复天然弹性不易变形，易熨更柔顺<br>
+										7.环保更健康，不含磷、荧光增白剂。<br>
+										箱规：4支/箱<br><br>
+
+										更多容量选择: 3kg 4.26kg
+	 							</p>
+	 							<p class="clr"></p>
+	 						</div>
+	 						<div class="duokuai"><b>产品特色</b><span>Selling Point</span></div>
+	 						<div><img id="chanpinteseimg" src="images/chanpinteseimg.jpg"><img id="chanpinteseimg1" src="images/chanpinteseimg1.jpg"></div>
+	 						<div class="duokuai"><b>适用范围</b><span>Heritage</span></div>
+	 						<div><img id="shiyongfanweiimg" src="images/shiyongfanweiimg.jpg"></div>
+	 						<div class="duokuai"><b>使用说明</b><span>Instructions</span></div>
+	 						<div><img id="shiyongshuomingimg" src="images/shiyongshuomingimg.jpg"></div>
+	 						<div class="duokuai"><b>品牌介绍</b><span>Brand Introduction</span></div>
+	 						<div>
+	 							<img src="images/products/weilushi_01.jpg" class="lt">
+	 							<p class="lt">
+	 								<b>威莱为你每一天，未来健康每一天</b> <br>
+									威莱集团是家用清洁及卫生消毒产品市场的领导者。在多个国家及地区，其消毒产品均占有领先的市场地位。
+	 							</p>
+	 						</div>
+	 					</div>
+	 					<div class="lt fontborder">
+	 						<ul>
+	 							<li><a href="javascript:void(0)">产品信息</a></li>
+	 							<li><a href="javascript:void(0)">产品特色</a></li>
+	 							<li><a href="javascript:void(0)">适用范围</a></li>
+	 							<li><a href="javascript:void(0)">使用说明</a></li>
+	 							<li><i><b></b></i><a class="redfont" href="">品牌介绍</a></li>
+	 						</ul>
+	 						<i></i>
+	 						<b></b>
+	 					</div>
+	 				</div>
+	 				<div class="clr"></div>
+	 			</div>
+	 			<div id="chanpin-r-bottom2">
+	 				<div><b></b><span>如果您发现商品信息不准确,</span><a href="javascript:void(0)">欢迎纠错</a></div>
+	 				<table>
+	 					<tbody>
+	 						<tr><th colspan="2"><b>主体</b></th></tr>
+	 						<tr><td></td><td></td></tr>
+	 						<tr><td>品牌</td><td>威露士（Walch）</td></tr>
+	 						<tr><td>类别</td><td>洗衣液</td></tr>
+	 						<tr><td>产品规格（ml/kg）</td><td>4.26kg</td></tr>
+	 						<tr><td>产品包装尺寸（cm）</td><td>254*117*326</td></tr>
+	 						<tr><td>香型</td><td>薰衣草</td></tr>
+	 					</tbody>
+	 				</table>
+	 			</div>
+	 			<div id="chanpin-r-bottom3">
+	 				<span>卫新 薰衣草洗衣液 4.26kg*1</span>
+	 			</div>
+	 			<div id="chanpin-r-bottomk"></div>
+	 			<div id="chanpin-r-bottom5">
+	 				<span>本产品全国联保，享受三包服务，质保期为：无质保</span>
+	 			</div>
+	 			<div id="chanpin-r-bottom6" class="fontborder">
+	 					<div><i></i><b>正品行货</b></div>
+	 					<p><br>京东商城向您保证所售商品均为正品行货，京东自营商品开具机打发票或电子发票。<br></p>
+	 					<div><i></i><b>全国联保</b></div>
+	 					<p>凭质保证书及京东商城发票，可享受全国联保服务（奢侈品、钟表除外；奢侈品、钟表由京东联系保修，享受法定三包售后服务），与您亲临商场选购的商品享受相同的质量保证。京东商城还为您提供具有竞争力的商品价格和运费政策，请您放心购买！ <br><br>
+	 					注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！<br><br>
+	 					</p>
+	 					<div><i></i><b>无忧退换货</b></div>
+	 					<p><br>客户购买京东自营商品7日内（含7日，自客户收到商品之日起计算），在保证商品完好的前提下，可无理由退货。（部分商品除外，详情请见各商品细则）
+	 					<br></p>
+	 			</div>
+	 			<div id="chanpin-r-bottom4">
+	 				<p><br>
+	 					<strong>权利声明：</strong>
+						京东上的所有商品信息、客户评价、商品咨询、网友讨论等内容，是京东重要的经营资源，未经许可，禁止非法转载使用。
+						<b>注：</b>本站商品信息均来自于合作方，其真实性、准确性和合法性由信息拥有者（合作方）负责。本站不提供任何保证，并不承担任何法律责任。<br>
+
+						<br><strong>价格说明：</strong><br>
+						<b>京东价：</b>京东价为商品的销售价，是您最终决定是否购买商品的依据。<br>		
+						<b>划线价：</b>商品展示的划横线价格为参考价，该价格可能是品牌专柜标价、商品吊牌价或由品牌供应商提供的正品零售价（如厂商指导价、建议零售价等）或该商品在京东平台上曾经展示过的销售价；由于地区、时间的差异性和市场行情波动，品牌专柜标价、商品吊牌价等可能会与您购物时展示的不一致，该价格仅供您参考。<br>
+						<b>折扣：</b>如无特殊说明，折扣指销售商在原价、或划线价（如品牌专柜标价、商品吊牌价、厂商指导价、厂商建议零售价）等某一价格基础上计算出的优惠比例或优惠金额；如有疑问，您可在购买前联系销售商进行咨询。<br>
+						<b>异常问题：</b>商品促销信息以商品详情页“促销”栏中的信息为准；商品的具体售价以订单结算页价格为准；如您发现活动商品售价或促销信息有异常，建议购买前先联系销售商咨询。<br>
+	 				</p>
+	 			</div>
+	 			<div id="pingjia1">
+	 				<div>商品评价</div>
+	 				<div>
+	 					<div class="lt"><b>97%</b><span>好评度</span></div>
+	 					<div class="lt">
+	 						<div><span>好评（97%）</span><i><b></b></i></div>
+	 						<div><span>中评（2%）</span><i><b></b></i></div>
+	 						<div><span>差评（1%）</span><i><b></b></i></div>
+	 					</div>
+	 					<div  id="maijiayinxiang" class="lt">
+	 						<div>买家印象：</div>
+	 						<ul>
+	 							<li>比超市便宜<span>（9786）</span></li>
+	 							<li>味道不错<span>（9786）</span></li>
+	 							<li>效果好<span>（9786）</span></li>
+	 							<li>质量不错 <span>（9786）</span></li>
+	 							<li>洗的干净<span>（9786）</span></li>
+	 							<li>呵呵哈哈大<span>（9786）</span></li>
+	 						</ul>
+	 					</div>
+	 					<div id="fapingjia" class="lt">
+	 						<div>您可对已购商品进行评价</div>
+	 						<div>发评价，拿京豆</div>
+	 						<div>前五名可获双倍京豆 <a href="javascript:void(0)">[规则]</a> </div>
+	 					</div>
+	 				</div>
+	 			</div>
+	 			<div id="pingjia2">
+	 				<ul>
+	 					<li class="chanpin-r-t-s">全部评价（34534）</li>
+	 					<li>好评（34544）</li>
+	 					<li>中评（3723）</li>
+	 					<li>差评（34）</li>
+	 					<li>有图片的评价</li>
+	 				</ul>
+	 			</div>
+	 			<div id="pingjia3" class="fontborder"><b>评价心得</b><b>顾客满意度</b><b>购买信息</b><b>评论者</b></div>
+	 			<div id="pingjia4">
+	 				<ul>
+	 					<li>
+	 						<div>味道清香..价格也比较公道 　2014-08-12 19:01</div>
+	 						<div>
+	 							<ul>
+	 								<li><a href="javascript:void(0)"><img src="images/pingjia1.jpg"></a></li>
+	 								<li><a href="javascript:void(0)"><img src="images/pingjia1.jpg"></a></li>
+	 								<li><a href="javascript:void(0)"><img src="images/pingjia1.jpg"></a></li>
+	 							</ul>
+	 							<span class="lt">共3张图片</span>
+	 							<a href="" class="lt">查看晒单></a>
+	 							<i class="lt"></i>
+	 							<div class="lt">
+	 								<div><i></i>kkngj2008</div>
+	 								<div><span>金牌会员</span>广东</div>
+	 								<div>2014-08-11 23:17 购买</div>
+	 							</div>
+	 							<div class="clr"></div>
+	 						</div>
+	 						<div><span>比洗衣粉好</span> <span>去污能力强</span></div>
+	 						<div><a href="javascript:void(0)">回复（25</a>） <a href="javascript:void(0)">赞（31）</a></div>
+	 						<div><a href="javascript:void(0)">查看全部回复>></a></div>
+	 					</li>
+	 					<li>
+	 						<div>味道清香..价格也比较公道 　2014-08-12 19:01</div>
+	 						<div>
+	 							<ul>
+	 								<li><a href="javascript:void(0)"><img src="images/pingjia1.jpg"></a></li>
+	 								<li><a href="javascript:void(0)"><img src="images/pingjia1.jpg"></a></li>
+	 								<li><a href="javascript:void(0)"><img src="images/pingjia1.jpg"></a></li>
+	 							</ul>
+	 							<span class="lt">共3张图片</span>
+	 							<a href="" class="lt">查看晒单></a>
+	 							<i class="lt"></i>
+	 							<div class="lt">
+	 								<div><i></i>kkngj2008</div>
+	 								<div><span>金牌会员</span>广东</div>
+	 								<div>2014-08-11 23:17 购买</div>
+	 							</div>
+	 							<div class="clr"></div>
+	 						</div>
+	 						<div><span>比洗衣粉好</span> <span>去污能力强</span></div>
+	 						<div><a href="javascript:void(0)">回复（25</a>） <a href="javascript:void(0)">赞（31）</a></div>
+	 						<div><a href="javascript:void(0)">查看全部回复>></a></div>
+	 					</li>
+	 					<li>
+	 						<div>味道清香..价格也比较公道 　2014-08-12 19:01</div>
+	 						<div>
+	 							<ul>
+	 								<li><a href="javascript:void(0)"><img src="images/pingjia1.jpg"></a></li>
+	 								<li><a href="javascript:void(0)"><img src="images/pingjia1.jpg"></a></li>
+	 								<li><a href="javascript:void(0)"><img src="images/pingjia1.jpg"></a></li>
+	 							</ul>
+	 							<span class="lt">共3张图片</span>
+	 							<a href="" class="lt">查看晒单></a>
+	 							<i class="lt"></i>
+	 							<div class="lt">
+	 								<div><i></i>kkngj2008</div>
+	 								<div><span>金牌会员</span>广东</div>
+	 								<div>2014-08-11 23:17 购买</div>
+	 							</div>
+	 							<div class="clr"></div>
+	 						</div>
+	 						<div><span>比洗衣粉好</span> <span>去污能力强</span></div>
+	 						<div><a href="javascript:void(0)">回复（25</a>） <a href="javascript:void(0)">赞（31）</a></div>
+	 						<div><a href="javascript:void(0)">查看全部回复>></a></div>
+	 					</li>
+	 					<li>
+	 						<div>味道清香..价格也比较公道 　2014-08-12 19:01</div>
+	 						<div>
+	 							<ul>
+	 								<li><a href="javascript:void(0)"><img src="images/pingjia1.jpg"></a></li>
+	 								<li><a href="javascript:void(0)"><img src="images/pingjia1.jpg"></a></li>
+	 								<li><a href="javascript:void(0)"><img src="images/pingjia1.jpg"></a></li>
+	 							</ul>
+	 							<span class="lt">共3张图片</span>
+	 							<a href="" class="lt">查看晒单></a>
+	 							<i class="lt"></i>
+	 							<div class="lt">
+	 								<div><i></i>kkngj2008</div>
+	 								<div><span>金牌会员</span>广东</div>
+	 								<div>2014-08-11 23:17 购买</div>
+	 							</div>
+	 							<div class="clr"></div>
+	 						</div>
+	 						<div><span>比洗衣粉好</span> <span>去污能力强</span></div>
+	 						<div><a href="javascript:void(0)">回复（25</a>） <a href="javascript:void(0)">赞（31）</a></div>
+	 						<div><a href="javascript:void(0)">查看全部回复>></a></div>
+	 					</li>
+	 					<li>
+	 						<div>味道清香..价格也比较公道 　2014-08-12 19:01</div>
+	 						<div>
+	 							<ul>
+	 								<li><a href="javascript:void(0)"><img src="images/pingjia1.jpg"></a></li>
+	 								<li><a href="javascript:void(0)"><img src="images/pingjia1.jpg"></a></li>
+	 								<li><a href="javascript:void(0)"><img src="images/pingjia1.jpg"></a></li>
+	 							</ul>
+	 							<span class="lt">共3张图片</span>
+	 							<a href="" class="lt">查看晒单></a>
+	 							<i class="lt"></i>
+	 							<div class="lt">
+	 								<div><i></i>kkngj2008</div>
+	 								<div><span>金牌会员</span>广东</div>
+	 								<div>2014-08-11 23:17 购买</div>
+	 							</div>
+	 							<div class="clr"></div>
+	 						</div>
+	 						<div><span>比洗衣粉好</span> <span>去污能力强</span></div>
+	 						<div><a href="javascript:void(0)">回复（25</a>） <a href="javascript:void(0)">赞（31）</a></div>
+	 						<div><a href="javascript:void(0)">查看全部回复>></a></div>
+	 					</li>
+	 				</ul>
+	 			</div>
+	 			<div id="pingjiapagebut5">
+	 				<button>下一页</button><button>1232</button><span>...</span><button>6</button><button>5</button>
+	 				<button>4</button><button>3</button><button>2</button>
+	 				<button class="dangqianpage">1</button>
+	 			</div>
+	 			<div id="zixuntop" class="fontborder">
+	 				<ul>
+	 					<li class="chanpin-r-t-s">全部购买咨询</li>
+	 					<li>商品咨询</li>
+	 					<li>库存配送</li>
+	 					<li>支付</li>
+	 					<li>发票保修</li>
+	 				</ul>
+	 				<input type="text" name=""  placeholder="请输入关键字" value="">
+	 				<input type="button" value="搜索" name="">
+	 				<div class="rt">发表咨询</div>
+	 			</div>
+	 			<p id="tiship" class="fontborder">
+	 				<b>温馨提示:</b>因厂家更改产品包装、产地或者更换随机附件等没有任何提前通知，且每位咨询者购买情况、提问时间等不同，为此以下回复仅对提问者3天内有效，其他网友仅供参考！若由此给您带来不便请多多谅解，谢谢！
+	 			</p>
+	 			<div class="clr"></div>
+	 			<div id="zixundetail">
+	 				<ul>
+	 					<li>
+	 						<div>网&nbsp;&nbsp;友：135*****193_p&nbsp;&nbsp;&nbsp;2014-11-23 12:27:13</div>
+	 						<div>咨询内容：<a href="javascript:void(0)">多少钱啊?</a></div>
+	 						<div>京东回复：您好！请您于京东客服联系。感谢您对京东的支持！祝您购物愉快！ <span class="rt">2014-11-24 15:25:59</span></div>
+	 					</li>
+	 					<li>
+	 						<div>网&nbsp;&nbsp;友：135*****193_p&nbsp;&nbsp;&nbsp;2014-11-23 12:27:13</div>
+	 						<div>咨询内容：<a href="javascript:void(0)">多少钱啊?</a></div>
+	 						<div>京东回复：您好！请您于京东客服联系。感谢您对京东的支持！祝您购物愉快！ <span class="rt">2014-11-24 15:25:59</span></div>
+	 					</li>
+	 					<li>
+	 						<div>网&nbsp;&nbsp;友：135*****193_p&nbsp;&nbsp;&nbsp;2014-11-23 12:27:13</div>
+	 						<div>咨询内容：<a href="javascript:void(0)">多少钱啊?</a></div>
+	 						<div>京东回复：您好！请您于京东客服联系。感谢您对京东的支持！祝您购物愉快！ <span class="rt">2014-11-24 15:25:59</span></div>
+	 					</li>
+	 					<li>
+	 						<div>网&nbsp;&nbsp;友：135*****193_p&nbsp;&nbsp;&nbsp;2014-11-23 12:27:13</div>
+	 						<div>咨询内容：<a href="javascript:void(0)">多少钱啊?</a></div>
+	 						<div>京东回复：您好！请您于京东客服联系。感谢您对京东的支持！祝您购物愉快！ <span class="rt">2014-11-24 15:25:59</span></div>
+	 					</li>
+	 					<li>
+	 						<div>网&nbsp;&nbsp;友：135*****193_p&nbsp;&nbsp;&nbsp;2014-11-23 12:27:13</div>
+	 						<div>咨询内容：<a href="javascript:void(0)">多少钱啊?</a></div>
+	 						<div>京东回复：您好！请您于京东客服联系。感谢您对京东的支持！祝您购物愉快！ <span class="rt">2014-11-24 15:25:59</span></div>
+	 					</li>
+	 					<li>
+	 						<div>网&nbsp;&nbsp;友：135*****193_p&nbsp;&nbsp;&nbsp;2014-11-23 12:27:13</div>
+	 						<div>咨询内容：<a href="javascript:void(0)">多少钱啊?</a></div>
+	 						<div>京东回复：您好！请您于京东客服联系。感谢您对京东的支持！祝您购物愉快！ <span class="rt">2014-11-24 15:25:59</span></div>
+	 					</li>
+	 				</ul>
+	 			</div>
+	 			<div class="clr"></div>
+	 			<div id="zixunbottom">
+	 				<span>购买之前，如有问题，请</span><a href="javascript:void(0)">[发表咨询]</a><span>留言咨询</span>
+	 				<a href="" class="rt">浏览所有咨询信息>></a><span class="rt">共<b>101</b>条</span>
+	 			</div>
+	 			<div id="wangyou" class="fontborder">
+	 				<ul>
+	 					<li class="chanpin-r-t-s">网友讨论圈</li>
+	 					<li>晒单贴</li>
+	 					<li>讨论帖</li>
+	 					<li>回答帖</li>
+	 					<li>圈子帖</li>
+	 				</ul>
+	 			</div>
+	 		</div>
+	 		<div class="clr"></div>
+	 	</div>
+	 </div>
+	  <!--猜你喜欢-->
+	  <div class="clr"></div>
+	  <div id="may_like">
+	  	<div>根据浏览猜你喜欢<a href="" class="rt">换一批</a></div>
+	  	<ul>
+	  		<li><a href="javascript:void(0)"><img src="images/maylike1.jpg"></a><div><a href="javascript:void(0)">卫新 护色洗衣液 2kg 袋装</a></div><a href="javascript:void(0)">(已有41422人评价)</a><span>￥32.50</span></li>
+	  		<li><a href="javascript:void(0)"><img src="images/maylike2.jpg"></a><div><a href="javascript:void(0)">威露士（Walch）2kg+2kg洗衣液（有氧洗）特惠双袋</a></div><a href="javascript:void(0)">(已有34422人评价)</a><span>￥32.50</span></li>
+	  		<li><a href="javascript:void(0)"><img src="images/maylike3.jpg"></a><div><a href="javascript:void(0)">奥妙净蓝全效高浓度洗衣液500g*(2+1)</a></div><a href="javascript:void(0)">(已有41472人评价)</a><span>￥32.50</span></li>
+	  		<li><a href="javascript:void(0)"><img src="images/maylike1.jpg"></a><div><a href="javascript:void(0)">卫新 护色洗衣液 2kg 袋装</a></div><a href="javascript:void(0)">(已有41422人评价)</a><span>￥32.50</span></li>
+	  		<li><a href="javascript:void(0)"><img src="images/maylike2.jpg"></a><div><a href="javascript:void(0)">威露士（Walch）2kg+2kg洗衣液（有氧洗）特惠双袋</a></div><a href="javascript:void(0)">(已有34422人评价)</a><span>￥32.50</span></li>
+	  		<li><a href="javascript:void(0)"><img src="images/maylike3.jpg"></a><div><a href="javascript:void(0)">奥妙净蓝全效高浓度洗衣液500g*(2+1)</a></div><a href="javascript:void(0)">(已有41472人评价)</a><span>￥32.50</span></li>
+	  	</ul>
+	  </div>
+	  <!--最近浏览-->
+	 <div id="recent_view">
+	 	<div>最近浏览<a href="" class="rt">更多浏览记录</a></div>
+	 	<ul>
+	 		<li><a href="javascript:void(0)"><img src="images/recent1.jpg"></a><span>￥179.00</span></li>
+	 		<li><a href="javascript:void(0)"><img src="images/rencent2.jpg"></a><span>￥85.00</span></li>
+	 	</ul> 	
+	 </div>
+	 <hr id="bottom-hr">
+	  <!--购物指南-->
+	  <div class="clr"></div>
+	 <div id="foot_bar">
+		<div class="lt">
+	 	<h3>购物指南</h3>
+	 		
+	 		<ul>
+	 			<li><a href="javascript:void(0)">购物流程</a></li>
+	 			<li><a href="javascript:void(0)">会员介绍</a></li>
+	 			<li><a href="javascript:void(0)">团购机票</a></li>
+	 			<li><a href="javascript:void(0)">常见问题</a></li>
+	 			<li><a href="javascript:void(0)">大家电</a></li>	
+	 			<li><a href="javascript:void(0)">联系客服</a></li>	
+	 		</ul>
+			</div>
+			<div class="lt">
+	 	<h3>配送方式</h3>
+	 		<ul>
+	 			<li><a href="javascript:void(0)">上门自提</a></li>
+	 			<li><a href="javascript:void(0)">211限时达</a></li>
+	 			<li><a href="javascript:void(0)">配送服务查询</a></li>
+	 			<li><a href="javascript:void(0)">配送费收取标准</a></li>
+	 			<li><a href="javascript:void(0)">如何送礼</a></li>
+	 			<li><a href="javascript:void(0)">海外配送</a></li>
+	 		</ul>
+			</div>
+			<div class="lt">
+	 	<h3>支付方式</h3>
+	 		<ul>
+	 			<li><a href="javascript:void(0)">货到付款</a></li>
+	 			<li><a href="javascript:void(0)">在线支付</a></li>
+	 			<li><a href="javascript:void(0)">分期付款</a></li>
+	 			<li><a href="javascript:void(0)">邮局汇款</a></li>
+	 			<li><a href="javascript:void(0)">公司转账</a></li>
+	 		</ul>
+			</div>
+			<div class="lt">
+	 	<h3>售后服务</h3>
+	 		<ul>
+	 			<li><a href="javascript:void(0)">售后政策</a></li>
+	 			<li><a href="javascript:void(0)">价格保护</a></li>
+	 			<li><a href="javascript:void(0)">退款说明</a></li>
+	 			<li><a href="javascript:void(0)">返修退货</a></li>
+	 			<li><a href="javascript:void(0)">消订单取</a></li>
+	 		</ul>
+			</div>
+			<div class="lt"	>
+	 	<h3>特色服务</h3>
+	 		<ul>
+	 			<li><a href="javascript:void(0)">夺宝岛</a></li>
+	 			<li><a href="javascript:void(0)">DIY装机</a></li>
+	 			<li><a href="javascript:void(0)">延保服务</a></li>
+	 			<li><a href="javascript:void(0)">京东E卡</a></li>
+	 			<li><a href="javascript:void(0)">节能补贴</a></li>
+	 			<li><a href="javascript:void(0)">京东通信</a></li>
+	 		</ul>
+	 		</div>
+	 		<div></div>
+	 </div>
+	 <div class="clr"></div>
+	  <!--页脚-->
+	 <div id="footer" class="clr">
+	 	<a href="javascript:void(0)">关于我们</a>|
+	 	<a href="javascript:void(0)">联系我们</a>|
+	 	<a href="javascript:void(0)">商家入驻</a>|
+	 	<a href="javascript:void(0)">营销中心</a>|
+	 	<a href="javascript:void(0)">手机京东</a>|
+	 	<a href="javascript:void(0)">友情链接</a>|
+	 	<a href="javascript:void(0)">销售联盟</a>|
+	 	<a href="javascript:void(0)">京东社区</a>|
+	 	<a href="javascript:void(0)">京东公益</a>| 
+
+	 	<p>
+	 	<br/>
+	 		北京市公安局朝阳分局备案编号110105014669  |  京ICP证070359号  |  互联网药品信息服务资格证编号(京)-经营性-2014-0008 <br/>
+音像制品经营许可证苏宿批005号  |  出版物经营许可证编号新出发(苏)批字第N-012号  |  互联网出版许可证编号新出网证(京)字150号 <br/>
+<a>网络文化经营许可证京网文[2011]0168-061号</a>	  文明办网文明上网举报电话：4006561155  Copyright © 2004-2015  京东JD.com 版权所有<br/>
+京东旗下网站：English Site  <br/>
+	 	</p>
+	 	<img src="images/jy.jpg" alt="" />
+	 	<img src="images/kx.jpg" alt="" />
+	 	<img src="images/cy.jpg" alt="" />
+	 	<img src="images/cx.jpg" alt="" /> 
+	 </div>
+	 <script type="text/javascript" src="1.js"></script>
+ </body>
+</html>
