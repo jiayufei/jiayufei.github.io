@@ -1,0 +1,55 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+.col
+{
+	z-index: 1;
+}
+li
+{
+	display:inline-block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	cursor:pointer;
+}
+#li1
+{
+	background-color: red;
+}
+#li2
+{
+	background-color: green;
+}
+#li3
+{
+	background-color: blue;
+}
+#divv
+{
+	clear: both;
+}
+div div
+{
+
+	position: absolute;
+	width: 200px;
+	height: 100px;
+}
+
+#div2
+{
+	background-color: green;
+
+}
+#div3
+{
+	background-color: blue;
+}
+#div1
+{
+	background-color: red;
+	
+}
