@@ -9,6 +9,7 @@
   <title>京东网上商城</title>
   <link rel="short icon" href="faVicon.ico"	  type="image/x-icon"/><!--随便写都可以生效？-->
   <link rel="stylesheet" href="css/basic_02.css"    type="text/css">
+  <link type="text/css" rel="stylesheet" href="css/css.css" />
   <script src="jquery-1.11.1.js" type="text/javascript"></script>
   <style type="text/css">
   </style>
@@ -210,8 +211,19 @@
 	 			</div>
 	 			
 	 			<div id="address">
-	 				<span class="fontcolor">配 送 至：</span>
-	 				<span id="addressCheck" class="fontcolor" onmouseover="hiddenAddShow()">北京朝阳<b></b></span>
+	 			
+	 				<ul id="list1" style="width:620px;margin:0px auto 0 auto;">
+						<li id="summary-stock">
+							<div class="dt">配&nbsp;&nbsp;送&nbsp;&nbsp;至：</div>
+							<div class="dd">
+								<div id="store-selector">
+									<div class="text"><div></div><b></b></div>                   
+									<div onclick="$('#store-selector').removeClass('hover')" class="close"></div>
+								</div><!--store-selector end-->
+								<div id="store-prompt"><strong></strong></div><!--store-prompt end-->
+							</div>
+						</li>
+					</ul>
 	 				<span id="haveSt"><b>有货,</b>支持&nbsp;<a href="javascript:void(0)">免运费</a>&nbsp;|&nbsp;<a href="javascript:void(0)">货到付款</a></span>
 	 				<div id="hiddenAddress">
 	 				    <span onclick="$('#hiddenAddress').css('display','none')"></span>
@@ -1022,5 +1034,8 @@
 	 	<img src="images/cx.jpg" alt="" /> 
 	 </div>
 	 <script type="text/javascript" src="1.js"></script>
+	 <script src="js/jquery-1.9.1.min.js"></script>
+	 <script src="js/location.js"></script>
+
  </body>
 </html>
