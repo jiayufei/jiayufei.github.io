@@ -430,7 +430,7 @@ function chooseCity(cityId,cityName){
 
 	currentDom = areaContainer;
 
-	$.getJSONP("http://d.jd.com/area/get?fid="+cityId+"&callback=getAreaListcallback");
+	$.getJSONP("https://d.jd.com/area/get?fid="+cityId+"&callback=getAreaListcallback");
 
 }
 
@@ -464,7 +464,7 @@ function chooseArea(areaId,areaName){
 
 	currentDom = townaContainer;
 
-	$.getJSONP("http://d.jd.com/area/get?fid="+areaId+"&callback=getAreaListcallback");
+	$.getJSONP("https://d.jd.com/area/get?fid="+areaId+"&callback=getAreaListcallback");
 
 }
 
